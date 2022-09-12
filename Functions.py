@@ -201,5 +201,31 @@
 #         print ('Not secure')
 # security()
 
-# ex 103
+# ex 105
+def isleap():
+    year = int(input('enter year: '))
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0 and year % 100 != 0:
+        return True
+    else:
+        return False
 
+def days():
+    month = input("enter month: ")
+    x = [1,3,5,7,8, 10, 12]
+    y = [4,6,9,11]
+
+    
+    if month in x:
+        print ('30 days')
+    elif month in y:
+        print ('31 days')
+    elif isleap()== True and month == 2:
+        print('29 days')
+    elif isleap() == False and month == 2:
+        print('28 days')
+
+days()

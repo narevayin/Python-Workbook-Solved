@@ -201,7 +201,7 @@
 #         print ('Not secure')
 # security()
 
-# ex 105
+# ex 106
 # year = int(input('enter year: '))
 # def isleap():
 #     if year % 400 == 0:
@@ -232,4 +232,35 @@
         
         
 # print (days())
+
+# ex 107
+
+# def low():
+#     x = int(input('enter x: '))
+#     y = int(input('enter y: '))
+
+#     div = 2
+#     while x % div != 0 or y % div != 0:
+    
+#         div += 1
+#         if div == min(x,y):
+#             break
+#         return x,y
+#     return x / div, y / div
+
+# print(low())
+
+# ex 109
+
+# def magic():
+#     day = int(input('day: '))
+#     month = int(input('month: '))
+#     year = (input('year: '))
+#     yearlast = year[2:]
+#     if day * month == int(yearlast):
+#         print ('magic')
+#     else:
+#         print('not magic')
+        
+# magic()
 
